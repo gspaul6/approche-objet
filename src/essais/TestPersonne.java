@@ -10,11 +10,22 @@ public class TestPersonne {
 				
 		AdressePostale secondadd = new AdressePostale(52, "rue de la Picnic", 33300,"Merignac");
 		
-		
-Personne one = new Personne("Timbaland","Jack",firstadd);
-                 
-Personne two = new Personne("Addidas","Black",secondadd);
+Personne []one = {
+		new Personne("Timbaland","Jack",firstadd),
+		new Personne("Addidas","Black",secondadd)
+};
 
+Personne b = one[0];
+
+for (int i = 0;i<one.length;i++)
+{
+	if(one[i].getnom().equals("Timbaland"))
+	{
+		one[i].setnom("Timberland");
+	
+		b.afficher();
+	}
+}
 
 	}
 
