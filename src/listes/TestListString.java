@@ -8,7 +8,7 @@ public class TestListString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<String> tom = new ArrayList();
+		List<String> tom = new ArrayList<>();
 		tom.add("Nice");
 		tom.add("Carcassonne");
 		tom.add("Narbonne");
