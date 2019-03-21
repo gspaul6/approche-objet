@@ -35,7 +35,7 @@ public class Pays {
 		// plus important Pib*habitant
 		double max2 = 0.0;
 
-		double mul = 0.0;
+		
 		String dodo2 = null;
 		for (PaysMan value : set) {
 
@@ -67,7 +67,7 @@ public class Pays {
 		}
 		System.out.println("the pib small total population" + " " + odod);
 		Iterator<PaysMan> temp4 = set.iterator();
-		String tomtom = null;
+		
 		while (temp4.hasNext()) {
 			PaysMan country = temp4.next();
 			if (country.getNom().equals(odod.getNom())) {

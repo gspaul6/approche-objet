@@ -10,6 +10,10 @@ public class PaysMan {
 		this.nbdhabitants=nbdhabitants;
 		this.pib=pib;
 	}
+	public PaysMan()
+	{
+		
+	}
 	
 	public String getNom() {
 		return nom;
