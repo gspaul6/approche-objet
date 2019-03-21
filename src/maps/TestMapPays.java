@@ -2,7 +2,10 @@ package maps;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import listes.PaysMan;
 
@@ -29,19 +32,33 @@ public class TestMapPays {
 		for (Map.Entry m : map1.entrySet()) {
 			System.out.print(m.getKey() + " ");
 		}
-		System.out.println();
+		System.out.println();                                          
 		System.out.println("getting all the values");
+		
 		for (Map.Entry m : map1.entrySet()) {
 			System.out.println(m.getKey() + " " + m.getValue());
+			
 		}
-		HashSet<PaysMan> set = new HashSet<>();
+		
 		//delete the one with lowest population
-		for (Map.Entry m : map1.entrySet()) {
-			System.out.println(m.getKey() + " " + m.getValue());
+		Iterator jal = map1.values().iterator();
+		while(jal.hasNext())
+		{int min=0;
+			PaysMan timothy=(PaysMan)jal.next();
+			if(timothy.getNbdhabitants()<min)
+			{
+				min=timothy.getNbdhabitants();
+			}
 			
-			set.add(new PaysMan(m.getValue().));
+		}jal.remove();
+	
 			
+		
+	for (Map.Entry m : map1.entrySet()) {
+		
+		System.out.println(m.getKey() + " " + m.getValue());
 		}
 	}
+	}
 
-}
+
