@@ -1,6 +1,6 @@
 package listes;
 
-public class PaysMan {
+public class PaysMan implements Comparable<PaysMan> {
 	private String nom;
 	private int nbdhabitants;
 	private double pib;
@@ -37,5 +37,12 @@ public class PaysMan {
 	public String toString()
 	{
 		return nom+" "+nbdhabitants+" "+pib; 
+	}
+	@Override
+	public int compareTo(PaysMan mec) {
+		int til= this.nom.compareTo(mec.getNom());
+		return til;
+		
+		
 	}
 }
